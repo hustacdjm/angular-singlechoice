@@ -1,6 +1,6 @@
 import {Component, Input, ViewEncapsulation} from '@angular/core';
 import {MatRadioGroup, MatRadioModule} from '@angular/material/radio';
-import {CommonModule} from "@angular/common";
+import {CommonModule, NgFor} from "@angular/common";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { DomSanitizer } from '@angular/platform-browser';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -13,7 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
     templateUrl  : './Component3ecbd9cb04b84830b3adfbc923458175.component.html',
     encapsulation: ViewEncapsulation.None,
     imports:[
-       CommonModule, FormsModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatIconModule,MatRadioModule
+       CommonModule, FormsModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatIconModule,MatRadioModule, NgFor
     ]
     
 })

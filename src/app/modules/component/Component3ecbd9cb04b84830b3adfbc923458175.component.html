@@ -2,13 +2,18 @@
 
     <ng-container>
 
-        <div class="mt-4">
-           
-            Test for the selector without change other infos.
-           
-        </div>    
+        <div class="ml-1" [innerHTML]="data.component.content.question"></div>
 
-        
+        <!-- Options -->
+        <mat-radio-group [(ngModel)]="data.runtime.data.answer">
+            <mat-radio-button
+            *ngFor="let option of data.component.content.options"
+            [value]="option.key"            
+            >
+            {{ option.value }}
+            </mat-radio-button>
+        </mat-radio-group>
+
     
     </ng-container>
     
