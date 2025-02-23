@@ -2,12 +2,12 @@
 
     <ng-container>
 
-        <div class="ml-1" [innerHTML]="data.component.content.question"></div>
+        <div class="ml-1" [innerHTML]="data.component?.content?.question"></div>
 
         <!-- Options -->
-        <mat-radio-group [(ngModel)]="data.runtime.data.answer">
-            <mat-radio-button
-            *ngFor="let option of data.component.content.options"
+        <mat-radio-group [value]="data.runtime.data.answer"  (change)="onAnswerChange($event)">
+            <mat-radio-button 
+            *ngFor="let option of data.component?.content?.options"
             [value]="option.key"            
             >
             {{ option.value }}

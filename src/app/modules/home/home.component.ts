@@ -34,13 +34,39 @@ export class LandingHomeComponent implements AfterContentInit
     @ViewChild('test', {read:ViewContainerRef}) testContainer!: ViewContainerRef;
    
 
-    template={
-  "name" : null,
-  "description" : null,
-  "version" : "3.0"
-};
+    template = {
+      "name": "SingleChoice",
+      "description": "single choice component",
+      "version": "3.0"
+    }
   
-    reactiveComponent=null;
+    reactiveComponent = {
+      "component": {
+        "componentTemplateId": "67b3c5af94d84c64a19d18ff",
+        "templateDeployId": null,
+        "content": {
+          "question": "<p>What's the question?</p>",
+          "options": [
+            {
+              "key": "1",
+              "value": "option 1"
+            },
+            {
+              "key": "2",
+              "value": "option 2"
+            }
+          ],
+          "rightanswer": "1"
+        },
+        "ui": {},
+        "scores": []
+      },
+      "runtime": {
+        "data": {
+          "answer": null
+        }
+      }
+    }
 
 
 

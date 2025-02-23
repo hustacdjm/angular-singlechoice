@@ -1,4 +1,4 @@
-import {Component, Input, ViewEncapsulation} from '@angular/core';
+import {Component, Input, OnInit, ViewEncapsulation} from '@angular/core';
 import {MatRadioGroup, MatRadioModule} from '@angular/material/radio';
 import {CommonModule} from "@angular/common";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
@@ -25,5 +25,12 @@ export class Component67ba02df552fc15fb62224cc324e5ef550e243abb1430a9347ff563b
      * Constructor
      */
      constructor(public sanitizer:DomSanitizer){}
+
+     // Handle the change event
+    onAnswerChange(event: any) {
+        const selectedValue = event.value; // Get the selected value from the event
+        this.data.runtime.data.answer = selectedValue; // Update the answer
+        console.log('Selected Answer:', this.data.runtime.data.answer); // Optional: Log the selected answer
+    }
 
 }
