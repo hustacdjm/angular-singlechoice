@@ -35,35 +35,12 @@ export class LandingHomeComponent implements AfterContentInit
    
 
     template={
-  "name" : "SingleChoice",
-  "description" : "single choice component",
-  "version" : "2.0"
+  "name" : null,
+  "description" : null,
+  "version" : "3.0"
 };
   
-    reactiveComponent={
-  "component" : {
-    "componentTemplateId" : "67b3c5af94d84c64a19d18ff",
-    "templateDeployId" : null,
-    "content" : {
-      "question" : "<p>What's the question?</p>",
-      "options" : [ {
-        "key" : "1",
-        "value" : "option 1"
-      }, {
-        "key" : "2",
-        "value" : "option 2"
-      } ],
-      "rightanswer" : "1"
-    },
-    "ui" : { },
-    "scores" : [ ]
-  },
-  "runtime" : {
-    "data" : {
-      "answer" : null
-    }
-  }
-};
+    reactiveComponent=null;
 
 
 
@@ -76,8 +53,8 @@ export class LandingHomeComponent implements AfterContentInit
    
     async StartTest(){
       
-        const componentModule = await import('../component/Component67b3fe0394d84c64a19d1902b7223958338b42dfaaddfc0f14510f9a.component');
-        const TemplateComponent = componentModule['Component67b3fe0394d84c64a19d1902b7223958338b42dfaaddfc0f14510f9a'];
+        const componentModule = await import('../component/Component67ba02df552fc15fb62224cc324e5ef550e243abb1430a9347ff563b.component');
+        const TemplateComponent = componentModule['Component67ba02df552fc15fb62224cc324e5ef550e243abb1430a9347ff563b'];
 
         this.testContainer.clear();
 
